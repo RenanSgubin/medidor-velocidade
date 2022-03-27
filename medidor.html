@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="medidor.css">
+</head>
+<body>
+
+<div class="wallet-and-accelerator">
+
+    <div class="accelerator" onmousedown="mDown()" onmouseup="mUp()" onmouseleave="reset()">
+        <div class="accelerator-content">
+            <script>
+                for(i = 0; i < 5; i++){
+    
+                    var elemento_pai = document.getElementsByClassName("accelerator-content")[0];
+    
+                    const span = document.createElement("span");
+                    elemento_pai.appendChild(span);
+                }
+            </script>
+            </div>
+    </div>
+
+    <div class="wallet">
+        <img src="person.png">
+        <div class="person-infos">
+            Nome: Renan Sgubin<br>
+            Data de Nascimento: 08/04/2004<br>
+            CPF: 000000000-00<br>
+            Celular: (00) 0000-00000<br>
+            Telefone: (00) 0000-00000
+        </div>
+    </div>
+
+    <div class="wallet-second-part">
+        <span class="wallet-points-text">Pontos na carteira:</span>
+        <span class="wallet-points">&nbsp;0</span>
+    </div>
+
+</div>
+
+
+    <div class="velocity">
+        Velocidade:&nbsp;
+        <span class="velocity-value">0 km/h</span>
+    </div>
+
+    <div class="velocity-limiter">
+        <div class="velocity-limiter-content">
+            70
+            km/h
+        </div>
+    </div>
+
+    <img src="car.gif" class="car">
+    <div class="floor">
+        <div class="floor-detail"></div>
+    </div>
+</body>
+<script src="medidor.js"></script>
+</html>
